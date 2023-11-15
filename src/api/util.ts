@@ -20,7 +20,7 @@ import config from '../config';
  * CONSTANT DECLARATIONS
  ************************/
 
-const MANGADEX_API_URL = 'https://api.mangadex.org';
+const MANGADEX_API_URL = 'https://www.nettruyenus.com';
 const CORS = config.corsUrl;
 
 process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = process.env.NODE_ENV === "production" ? "1" : "0";
