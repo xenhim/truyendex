@@ -116,7 +116,7 @@ export const createHttpsRequestPromise = function <T>(method: string, path: stri
     headers.set('x-requested-with', 'cubari')
     const httpsRequestOptions: AxiosRequestConfig = {
         method: method,
-        url: `${CORS}/v1/cors/${encodedUrl}`,
+        url: `${CORS}/v1/cors/${path}`,
         headers: {
             'x-requested-with': 'cubari'
         }
