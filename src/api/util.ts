@@ -118,7 +118,8 @@ export const createHttpsRequestPromise = function <T>(method: string, path: stri
         method: method,
         url: `${CORS}/${path}`,
         headers: {
-            'x-requested-with': 'cubari'
+            'x-requested-with': 'cubari',
+            'referer': 'https://mangadex.org'
         }
     };
 
