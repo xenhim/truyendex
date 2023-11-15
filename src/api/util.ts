@@ -113,7 +113,7 @@ export const createHttpsRequestPromise = function <T>(method: string, path: stri
     const encodedUrl = btoa(`${MANGADEX_API_URL}${path}`).replace(/\+/g, "-").replace(/\//g, "_")
     console.log('call api...', path, encodedUrl)
     const headers = new Headers()
-    headers.set('x-requested-with', 'cubari')
+    headers.set('referer', 'https://mangadex.org')
     const httpsRequestOptions: AxiosRequestConfig = {
         method: method,
         url: `${CORS}/${path}`,
